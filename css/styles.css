@@ -10,13 +10,15 @@
 }*/
 /* End for testing */
 
-.bottom-left {
+.A {
   display: none;
+  background-color: red;
 }
 
-.top-right {
+.B {
   height: 90vh;
   width: 100vw;
+  background-color: yellow;
 }
 .wrapper {
   height: 100vh;
@@ -33,6 +35,57 @@
   display: block;
   margin: 6.5% auto;
   height: 27.5%;
-  width: 80vw;
+  width: 80%;
   background-color: blue;
 }
+@media screen and (max-width: 1200px) and (min-width: 601px) {
+  .A {
+    margin-left: auto;
+    margin-right: auto;
+    display:  inline-block;
+    height: 90vh;
+    width: 49.5vw;
+    float: left;
+  }
+
+  .B {
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    height: 90vh;
+    width: 49.5vw;
+    float: right;
+  }
+}
+
+  @media screen and (min-width: 1201px) {
+    .box {
+      margin: 0%;
+      display: inline-flex;
+      height: 226px;
+      width: 30%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .A {
+      vertical-align: middle;
+      display: block;
+      width: 100vw;
+      height: 45vh;
+      padding: 1%;
+      text-align: center;
+      position: relative;
+    }
+
+    .B {
+      width: 100vw;
+      height: 45vh;
+      display: block;
+      padding: 1%;
+      text-align: center;
+      position: relative;
+    }
